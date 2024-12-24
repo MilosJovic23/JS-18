@@ -1,16 +1,4 @@
-//
 
-//
-
-//
-
-// Klasa- definicije necega
-//
-// svaka osoba ime karakteristika a one su ime, prezime , tezina..
-//
-//  new Osoba --napravili smo novi objekat
-
-//
 
 class Osoba {
 	ime;
@@ -26,7 +14,7 @@ class Osoba {
 			typeof prezime === "undefined" ||
 			typeof pol === "undefined"
 		) {
-			throw new Error("morate sve osobine jedne osobe");
+			throw new Error("morate naznaciti sve osobine jedne osobe");
 		}
 
 		this.ime = ime;
@@ -57,7 +45,6 @@ class Osoba {
 	}
 }
 
-/// istrazi kontsturktore i napravi da se ime prezime i pol moraju uneti
 
 let petar = new Osoba("Toma", "Nikolic", "M");
 
@@ -66,12 +53,10 @@ petar.visina = 180;
 petar.bojaOciju = "Smedja";
 petar.Pozdravi();
 
-// console.log(petar);
-
 let martina = new Osoba("Martina", "Martinovic", "Z");
 martina.visina = 168;
 martina.tezina = 55;
-martina.bojaOciju = "Plava";
+martina.bojaOciju = "plava";
 martina.Pozdravi();
 
 let jelena = new Osoba("Jelena", "Nikolic", "Z");
@@ -79,19 +64,3 @@ let jelena = new Osoba("Jelena", "Nikolic", "Z");
 jelena.visina = 171;
 jelena.bojaOviua = "plava";
 jelena.Pozdravi();
-// console.log(martina);
-
-/// bonus vezba --Pozdrav ja se zovem IME PREZIME visok/a sam VISINA.
-
-// Domaci:
-
-// * Napraviti klasu Vozilo
-//      * Boja
-//      * Vrsta(vrsta moze biti automobil, letelica ili plovilo)
-//
-//  * Napraviti klasu Automobil
-//      * Marka
-//      * MOdel
-//      * Broj vrata (3 ili 5)
-//      * Gorivo (benzin, dizel ili metan)
-//
